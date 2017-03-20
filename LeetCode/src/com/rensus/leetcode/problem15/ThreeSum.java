@@ -1,6 +1,7 @@
 package com.rensus.leetcode.problem15;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -25,23 +26,13 @@ public class ThreeSum {
 	}
 
 	public List<List<Integer>> threeSum(int[] nums) {
-		// Value, List of positions
-		Map<Integer, List<Integer>> valueMap = new HashMap<>();
-		
-		for(int i = 0; i < nums.length; i++){
-			Integer x = nums[i];
-			if(valueMap.containsKey(x)){
-				valueMap.get(x).add(i);
-			}else{
-				List<Integer> values = new ArrayList<>();
-				values.add(i);
-				valueMap.put(x, values);
-			}
+		List<List<Integer>> result = new ArrayList<>();
+		if(nums.length < 3){
+			return result; // Edge case
 		}
 		
-		// System.out.println(valueMap);
 		
-		return null;
+		return result;
 	}
 	
 	
