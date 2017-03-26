@@ -31,6 +31,10 @@ public class ThreeSum {
 			return result; // Edge case
 		}
 		
+		Arrays.sort(nums); // Sort the array
+		for(int i = 0; i < nums.length-2; i++){
+			
+		}
 		
 		return result;
 	}
